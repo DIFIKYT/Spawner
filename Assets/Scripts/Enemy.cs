@@ -4,6 +4,11 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float _speed = 5f;
 
+    public void SetDirection(Vector3 direction)
+    {
+        transform.forward = direction;
+    }
+
     private void Update()
     {
         Move();
